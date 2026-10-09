@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "id": "morgoth.workspaces",
-  "name": "My Workspaces",
+  "id": "workspaces",
+  "name": "Workspaces",
   "version": "1.0.0",
   "author": "Omarchy",
   "description": "Workspace number indicators",
@@ -12,7 +12,7 @@
     "barWidget": "Workspaces.qml"
   },
   "barWidget": {
-    "displayName": "My Workspaces",
+    "displayName": "Workspaces",
     "description": "Workspace number indicators",
     "category": "Compositor",
     "allowMultiple": false

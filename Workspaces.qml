@@ -6,7 +6,7 @@ import qs.Ui
 
 BarWidget {
   id: root
-  moduleName: "morgoth.workspaces"
+  moduleName: "workspaces"
 
   // Workspace whose hover preview may open (-1 = none). Kept at widget level
   // so only one preview exists at a time; moving between numbers swaps cards

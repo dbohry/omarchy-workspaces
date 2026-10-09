@@ -139,11 +139,11 @@ Item {
         ScreencopyView {
           id: capture
           anchors.fill: parent
-          // HyprlandToplevel wraps the Wayland Toplevel that screencopy
-          // accepts; fall back to the Hyprland object if the bridge is absent.
-          captureSource: modelData.toplevel.wayland !== null && modelData.toplevel.wayland !== undefined
-            ? modelData.toplevel.wayland
-            : modelData.toplevel
+          // HyprlandToplevel.wayland is the Wayland Toplevel screencopy accepts.
+          // It can be briefly null while a window is being mapped; leaving the
+          // source null shows the placeholder instead of handing screencopy a
+          // non-capturable object.
+          captureSource: modelData.toplevel.wayland
           live: root.live
           constraintSize: Qt.size(Math.max(1, Math.round(width)), Math.max(1, Math.round(height)))
           opacity: hasContent ? 1 : 0

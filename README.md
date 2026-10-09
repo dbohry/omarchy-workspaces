@@ -28,7 +28,7 @@ Settings are optional and go on the widget's entry in
 
 ```json
 {
-  "id": "morgoth.workspaces",
+  "id": "workspaces",
   "previewWidth": 420,
   "previewDelay": 350
 }
@@ -71,7 +71,7 @@ and only run while a preview is open.
 ## Removing
 
 ```bash
-omarchy plugin remove morgoth.workspaces
+omarchy plugin remove workspaces
 ```
 
 You can bring it back any time with `omarchy plugin clone omarchy.workspaces`.
